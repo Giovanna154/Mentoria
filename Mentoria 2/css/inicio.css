@@ -15,9 +15,9 @@
   height: 100%;
   background: url(../imgs/imagem-banner.png);
   background-size: cover;
-  width: 100%;
   position: fixed;
-  z-index: -1;
+  z-index: 0;
+  width: 100%;
   background-position: center;
 }
 
@@ -81,6 +81,7 @@ section#main-conteudos {
   width: 100%;
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .conteudo {
@@ -100,7 +101,7 @@ p {
   font-size: 45px;
 }
 
-.sobre-conteudo {display: flex;width: 100%;align-items: baseline;margin: 55px 0px;}
+.sobre-conteudo {display: flex;width: 100%;height: 100%;align-items: center;}
 
 .sobre-conteudo p {
   font-size: clamp(22px,32px,0px);
@@ -129,6 +130,7 @@ img.logo {
 }
 
 section#objetivos {
+  position: relative;
   background: black;
   width: 100%;
   height: auto;
@@ -166,6 +168,7 @@ img.icons {
 }
 
 section.termos-footer {
+  position: relative;
   background: black;
   width: 100%;
   display: flex;
@@ -347,7 +350,9 @@ div {}
 }
 
 section#sobre {
+  position: relative;
   width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   margin: -1px 0px;
@@ -427,3 +432,8 @@ h4 {
 }
 
 .info-sobre p {}
+
+.campos {
+    position: relative;
+    z-index: 1;
+}
