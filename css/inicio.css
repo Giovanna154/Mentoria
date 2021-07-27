@@ -151,6 +151,47 @@ button.scroll {
   overflow: hidden;
 }
 
+span.animTop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e77476);
+  animation: borderSlide-top 1s ease-in-out infinite;
+}
+
+span.animRight {
+  width: 2px;
+  right: 0;
+  background: linear-gradient(180deg, transparent, #e77476);
+  animation: borderSlide-right 1s ease-in-out infinite;
+  animation-delay: 0.25s;
+  height: 100%;
+  top: 0;
+  position: absolute;
+}
+
+span.animBottom {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, #e77476);
+  animation: borderSlide-bottom 1s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+span.animLeft {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(0deg, transparent, #e77476);
+  animation: borderSlide-left 1s ease-in-out infinite;
+  animation-delay: 0.75s;
+  top: 0;
+}
+
 section#main-conteudos {
   width: 100%;
   height: 100%;
@@ -245,7 +286,8 @@ section#main-footer {
     box-shadow: 0 0 20px #443e3e, 0 0 30px #0087cb, 0 0 30px #000000;
   }
 }
-
+ 
+/* Efeito de linha envolta dos botões *\
 @keyframes borderSlide-top {
   0% {
     left: -100%;
@@ -418,43 +460,3 @@ button.scroll:hover {
   display: block;
 }
 
-span.animTop {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #e77476);
-  animation: borderSlide-top 1s ease-in-out infinite;
-}
-
-span.animRight {
-  width: 2px;
-  right: 0;
-  background: linear-gradient(180deg, transparent, #e77476);
-  animation: borderSlide-right 1s ease-in-out infinite;
-  animation-delay: 0.25s;
-  height: 100%;
-  top: 0;
-  position: absolute;
-}
-
-span.animBottom {
-  position: absolute;
-  bottom: 0;
-  height: 2px;
-  width: 100%;
-  background: linear-gradient(270deg, transparent, #e77476);
-  animation: borderSlide-bottom 1s ease-in-out infinite;
-  animation-delay: 0.5s;
-}
-
-span.animLeft {
-  position: absolute;
-  left: 0;
-  height: 100%;
-  width: 2px;
-  background: linear-gradient(0deg, transparent, #e77476);
-  animation: borderSlide-left 1s ease-in-out infinite;
-  animation-delay: 0.75s;
-  top: 0;
-}
