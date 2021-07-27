@@ -287,7 +287,8 @@ section#main-footer {
   }
 }
  
-/* Efeito de linha envolta dos botões *\
+/* Efeito de linha envolta dos botões */
+
 @keyframes borderSlide-top {
   0% {
     left: -100%;
